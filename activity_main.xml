@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_rules"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="@string/title_rules"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/show_count_team1"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:padding="@dimen/padding"
+        android:text="@string/team1_show_count"
+        android:textColor="@color/text_team1"
+        android:textSize="@dimen/tv_size"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_below="@id/title_rules"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/button_team1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:text="@string/team_1"
+        android:textStyle="bold"
+        android:textColor="@color/text_team1"
+        android:background="@color/button_color"
+        android:layout_below="@id/show_count_team1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="countUpT1"/>
+
+    <TextView
+        android:id="@+id/show_count_team2"
+        android:layout_width="wrap_content"
+        android:layout_height="180dp"
+        android:padding="@dimen/padding"
+        android:text="@string/team2_show_count"
+        android:textColor="@color/text_team2"
+        android:textSize="@dimen/tv_size"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_below="@id/button_team1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"/>
+
+    <Button
+        android:id="@+id/button_team2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding"
+        android:text="@string/team_2"
+        android:textStyle="bold"
+        android:textColor="@color/text_team2"
+        android:background="@color/button_color"
+        android:layout_below="@id/show_count_team2"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="countUpT2"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button_team2"
+        android:padding="30dp"
+        android:text="@string/reset"
+        android:textStyle="bold"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="reset"/>
+
+
+</RelativeLayout>
